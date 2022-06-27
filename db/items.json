@@ -1,0 +1,340 @@
+{
+	"airline": {
+		"cost": 7000,
+		"limit": 20000,
+		"type": "BXP"
+	},
+	"cargo": {
+		"cost": 14000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+	"conductor": {
+		"cost": 13000,
+		"limit": 20000,
+		"type": "BXP"
+	},
+	"ems": {
+		"cost": 10000,
+		"limit": 15000,
+		"type": "BXP"
+	},
+	"firefighter": {
+		"cost": 33000,
+		"limit": 2000,
+		"type": "BXP"
+	},
+	"garbage": {
+		"cost": 11000,
+		"limit": 15000,
+		"type": "BXP"
+	},
+	"heli": {
+		"cost": 17500,
+		"limit": 10000,
+		"type": "BXP"
+	},
+	"hunting": {
+		"cost": 18000,
+		"limit": 5000,
+		"type": "BXP"
+	},
+	"postop": {
+		"cost": 16000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+	"bus": {
+		"cost": 25000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+
+	"farming": {
+		"cost": 18000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+
+	"fishing": {
+		"cost": 23000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+
+	"mechanic": {
+		"cost": 10000,
+		"limit": 30000,
+		"type": "BXP"
+	},
+
+	"mining": {
+		"cost": 6000,
+		"limit": 20000,
+		"type": "BXP"
+	},
+
+	"player": {
+		"cost": 1000,
+		"limit": 35000,
+		"type": "BXP"
+	},
+
+	"racing": {
+		"cost": 20000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+
+	"strength": {
+		"cost": 7000,
+		"limit": 10000,
+		"type": "BXP"
+	},
+
+	"trucking": {
+		"cost": 5000,
+		"limit": 50000,
+		"type": "BXP"
+	},
+	"acid": {
+		"cost": 15000,
+		"limit": 10000,
+		"type": "Cargo"
+	},
+
+	"airlinemeals": {
+		"cost": 40000,
+		"limit": 5000,
+		"type": "Cargo"
+	},
+
+	"batteries": {
+		"cost": 320000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"bronzealloy": {
+		"cost": 22000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"cementmix": {
+		"cost": 120000,
+		"limit": 2500,
+		"type": "Cargo"
+	},
+
+	"circuitboards": {
+		"cost": 240000,
+		"limit": 500,
+		"type": "Cargo"
+	},
+
+	"concrete": {
+		"cost": 860000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"defibkit": {
+		"cost": 50000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"explosives": {
+		"cost": 980000,
+		"limit": 150,
+		"type": "Cargo"
+	},
+
+	"flint": {
+		"cost": 7500,
+		"limit": 8000,
+		"type": "Cargo"
+	},
+
+	"kerosene": {
+		"cost": 85000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"lctoken": {
+		"cost": 66000,
+		"limit": 800,
+		"type": "Cargo"
+	},
+
+	"pills": {
+		"cost": 300000,
+		"limit": 500,
+		"type": "Cargo"
+	},
+
+	"planks": {
+		"cost": 35000,
+		"limit": 5000,
+		"type": "Cargo"
+	},
+
+	"rawemeralds": {
+		"cost": 25000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"rawore": {
+		"cost": 12000,
+		"limit": 10000,
+		"type": "Cargo"
+	},
+
+	"rebar": {
+		"cost": 320000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"refinedamalgam": {
+		"cost": 85000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"refinedcopper": {
+		"cost": 18000,
+		"limit": 4000,
+		"type": "Cargo"
+	},
+
+	"refinedsolder": {
+		"cost": 24000,
+		"limit": 3000,
+		"type": "Cargo"
+	},
+
+	"refinedtin": {
+		"cost": 45000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"refinedzinc": {
+		"cost": 8000,
+		"limit": 3000,
+		"type": "Cargo"
+	},
+
+	"sand": {
+		"cost": 13000,
+		"limit": 20000,
+		"type": "Cargo"
+	},
+
+	"sawdust": {
+		"cost": 3000,
+		"limit": 20000,
+		"type": "Cargo"
+	},
+
+	"scrapaluminum": {
+		"cost": 6000,
+		"limit": 3000,
+		"type": "Cargo"
+	},
+
+	"scrapcopper": {
+		"cost": 7000,
+		"limit": 8000,
+		"type": "Cargo"
+	},
+	"scrapgold": {
+		"cost": 60000,
+		"limit": 1000,
+		"type": "Cargo"
+	},
+
+	"scraplead": {
+		"cost": 8500,
+		"limit": 3000,
+		"type": "Cargo"
+	},
+
+	"scrapmercury": {
+		"cost": 26000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"scrapplastic": {
+		"cost": 5000,
+		"limit": 20000,
+		"type": "Cargo"
+	},
+
+	"scraptin": {
+		"cost": 20000,
+		"limit": 5000,
+		"type": "Cargo"
+	},
+
+	"sulfur": {
+		"cost": 50000,
+		"limit": 2000,
+		"type": "Cargo"
+	},
+
+	"water": {
+		"cost": 99000,
+		"limit": 500,
+		"type": "Cargo"
+	},
+
+	"house": {
+		"cost": 2650000,
+		"limit": 1000,
+		"type": "Kits",
+		"includes": {
+			"Planks": 2,
+			"Ceramic Tiles": 4,
+			"Concrete": 1,
+			"Rebar": 1,
+			"Copper Wire": 1,
+			"Computers": 1
+		}
+	},
+
+	"paramedic": {
+		"cost": 164000000,
+		"limit": 2,
+		"type": "Kits",
+		"includes": {
+			"BXP": 5000,
+			"Defib": 500
+		}
+	},
+
+	"doctor": {
+		"cost": 328000000,
+		"limit": 1,
+		"type": "Kits",
+		"includes": {
+			"BXP": 10000,
+			"Defib": 1000
+		}
+	},
+
+	"surgeon": {
+		"cost": 818750000,
+		"limit": 1,
+		"type": "Kits",
+		"includes": {
+			"BXP": 25000,
+			"Defib": 2500
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"bot_prefix": ">",
+	"guild_id": 986050013899665472,
+	"orders_channel": 986057624858533928,
+	"collection_channel": 986057077220855838,
+	"staff_order_log": 986361761064169472,
+	"manager_role": 986051052791021629,
+	"hunter_role": 986051735002955837,
+	"bxp_role": 949059295713054770,
+	"orders_log_channel": 986708633876312164,
+	"log_channel": 986708660795375656,
+	"error_log_channel": 986351763353378916,
+	"limits": {
+		"customer": 3,
+		"high_volume_customer": 5
+	},
+	"customerRoles": {
+		"high_volume_customer": 986055989360988180,
+		"customer": 986055790936858674
+	}
+}

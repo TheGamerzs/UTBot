@@ -1,0 +1,36 @@
+{
+	"name": "order",
+	"type": 1,
+	"description": "Create an order",
+	"options": [
+		{
+			"type": 3,
+			"name": "product",
+			"description": "Product",
+			"required": true,
+			"autocomplete": true
+		},
+		{
+			"type": 4,
+			"name": "amount",
+			"description": "Amount",
+			"required": true,
+			"min_value": 0,
+			"max_value": 50000,
+			"autocomplete": true
+		},
+		{
+			"type": 5,
+			"name": "priority",
+			"description": "Priority",
+			"required": false
+		},
+		{
+			"type": 3,
+			"name": "storage",
+			"description": "Storage",
+			"required": false,
+			"autocomplete": true
+		}
+	]
+}
