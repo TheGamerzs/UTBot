@@ -31,7 +31,6 @@ class Customer(commands.Cog):
     """Customer Commands"""
     def __init__(self, bot):
         self.bot = bot
-        self.tree = discord.utils.create_tree(bot)
 
     @commands.command(name="order")
     async def _order(self, ctx, item, amount: Union[int, str], priority:str, storage = None):
@@ -162,7 +161,7 @@ class Customer(commands.Cog):
 
         con = sqlite3.connect('db/orders.db')
         cur = con.cursor()
-        oginfo = f"""SELECT order_id, product, amount, cost, progress, grinder, status, storage, priority FROM orders WHERE customer LIKE {user.id} and status not LIKE 'cancelled' and status not LIKE 'delivered' """
+        oginfo = f"""SELECT order_id, product, amount, cost, progress, grinder, status, storage, priority, discount_id FROM orders WHERE customer LIKE {user.id} and status not LIKE 'cancelled' and status not LIKE 'delivered' """
         info = cur.execute(oginfo)
         userorders = info.fetchall()
 
@@ -179,16 +178,16 @@ class Customer(commands.Cog):
             if x[5] is None:
                 grinderperson = "Not Claimed"
 
-            if x[7]:
+            if x[8]:
                 hasPriority = 1
                 priority = "**Priority**: High\n"
 
-            if x[8]:
-                discount_amount = functions.discount_get_amount(x[8])
+            if x[9]:
+                discount_amount = functions.discount_get_amount(x[9])
                 discount_text = "\n**Discount**: {}%".format(discount_amount)
 
             formatedPrice = "${:,}".format(x[3])
-            embed.add_field(name=str(x[1]).title(), value=f"**Order ID**: {str(x[0])}\n{priority}**Product**: {str(x[1])}\n**Amount**: {str(x[2])}\n**Cost**: {formatedPrice}\n**Status**: {str(x[6]).title()}\n**Grinder**: {grinderperson}\n**Progress**: {str(x[4])}/{str(x[2])}", inline=True)
+            embed.add_field(name=str(x[1]).title(), value=f"**Order ID**: {str(x[0])}\n{priority}**Product**: {str(x[1])}\n**Amount**: {str(x[2])}\n**Cost**: {formatedPrice}\n**Status**: {str(x[6]).title()}\n**Grinder**: {grinderperson}\n**Progress**: {str(x[4])}/{str(x[2])}{discount_text}", inline=True)
 
         if hasPriority:
             embed.colour = 0x8240AF
