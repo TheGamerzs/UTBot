@@ -174,6 +174,7 @@ class Customer(commands.Cog):
         for i, x in enumerate(userorders, 1):
             grinderperson = f"<@{str(x[5])}>"
             priority = ""
+            discount_text = ""
 
             if x[5] is None:
                 grinderperson = "Not Claimed"
