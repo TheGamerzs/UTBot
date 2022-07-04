@@ -33,9 +33,9 @@ class Info(commands.Cog):
                 itemsText = ""
 
             itemCost = f"{items[item]['cost']:,}"
-            highItemCost = f"{items[item]['cost'] * 1.15:,}"
+            highItemCost = f"{round(items[item]['cost'] * 1.15):,}"
 
-            itemsText += f"{item.title()}{' '*(columnLength-len(item))}${itemCost}{' '*(columnLength-len(itemCost)-7)}(${highItemCost}{' '*(columnLength-len(highItemCost)-7)}){items[item]['limit']:,}\n\n"
+            itemsText += f"{item.title()}{' '*(columnLength-len(item))}${itemCost}{' '*(columnLength-len(itemCost)-7)}(${highItemCost}){' '*(columnLength-len(highItemCost)-7)}{items[item]['limit']:,}\n\n"
 
             if itemType == "Kits":
                 # Remove '\n' from the end of the itemsTex

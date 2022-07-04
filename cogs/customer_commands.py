@@ -139,7 +139,7 @@ class Customer(commands.Cog):
 
         cur.execute(f"""INSERT INTO orders
                         (order_id, customer, product, amount, storage, cost, messageid, progress, status, priority, discount_id, order_timestamp)
-                    VALUES ({order_id}, {ctx.author.id}, ?, ?, ?, {final_cost}, {message.id}, 0,'pending', ?, ?)""", (item.lower(), amount, storage, priority, discount_id, datetime.now()))
+                    VALUES ({order_id}, {ctx.author.id}, ?, ?, ?, {final_cost}, {message.id}, 0,'pending', ?, ?, ?)""", (item.lower(), amount, storage, priority, discount_id, datetime.now()))
 
         con.commit()
         con.close()
