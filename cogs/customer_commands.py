@@ -94,7 +94,7 @@ class Customer(commands.Cog):
             return
 
         cur.execute("SELECT count(*) FROM orders")
-        order_id = cur.fetchone()[0] + 1
+        order_id = cur.fetchone()[0] + 1 + 65 # Offset
 
         cur.execute("SELECT sum(amount) FROM orders WHERE customer LIKE {} AND status IN ('pending', 'in progress')".format(ctx.author.id))
         current_amount = cur.fetchone()[0]
